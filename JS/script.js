@@ -113,3 +113,15 @@ pages.forEach((_, index) => {
     }, (index + 1) * 200 + 2100)
 
 })
+
+
+
+// Type js function
+
+
+new Typed('#typed',{
+    strings : ['a Front-end Developer',' a Designer',' a Photographer', ' a Musician',],
+    typeSpeed : 10,
+    delaySpeed : 100,
+    loop : true
+  });
