@@ -121,7 +121,7 @@ pages.forEach((_, index) => {
 
 new Typed('#typed',{
     strings : ['a Front-end Developer',' a Designer',' a Photographer', ' a Musician',],
-    typeSpeed : 10,
+    typeSpeed : 50,
     delaySpeed : 100,
     loop : true
   });
