@@ -125,3 +125,44 @@ new Typed('#typed',{
     delaySpeed : 100,
     loop : true
   });
+
+
+
+
+
+//   Message Function start Here
+
+
+
+    // Initialize EmailJS with your user ID
+    emailjs.init("soumikmondal61116@gmail.com");
+
+    // Function to send email
+    function sendEmail(e) {
+        e.preventDefault(); // Prevent form submission
+
+        // Get user inputs
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
+
+        // Send email
+        emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+            from_name: name,
+            reply_to: email,
+            message_html: message
+        }).then(function(response) {
+            console.log('Email sent successfully:', response);
+            alert('Your message has been sent!');
+        }, function(error) {
+            console.error('Email sending failed:', error);
+            alert('There was an error sending your message. Please try again later.');
+        });
+
+        // Clear form inputs
+        document.getElementById('contact-form').reset();
+    }
+
+    // Attach sendEmail function to form submission
+    document.getElementById('contact-form').addEventListener('submit', sendEmail);
+
