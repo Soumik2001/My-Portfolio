@@ -20,6 +20,8 @@
   <!-- Lornicon Links -->
   <script src="https://cdn.lordicon.com/lordicon.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
 </head>
 
 <body>
@@ -338,11 +340,11 @@
           <h1 class="title" style="display: flex; justify-content: center; align-items: center; margin-top: .5rem;">
             <img src="/Images/contacts.gif" style="width: 65px; height: 65px;">Contact Me!</h1>
             <div class="contact-box">
-              <form action="#">
+              <form action="#" id="contact-form">
 
-                <input type="text" class="field" placeholder="Full Name" required>
-                <input type="email" class="field" placeholder="Email Address" required>
-                <textarea name="" id="" cols="30" rows="10" class="field" placeholder="Your Message" required></textarea>
+                <input type="text" class="field" placeholder="Full Name" id="name" required>
+                <input type="email" class="field" id="email" placeholder="Email Address" required>
+                <textarea name="" id="message" cols="30" rows="10" class="field" placeholder="Your Message" required></textarea>
                 <button type="submit" class="btn">Send Message<img src="/Images/message.gif"></button>
               </form>
             </div>
@@ -373,7 +375,7 @@
 
   
   <script src="./JS/script.js"></script>
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  
 
   </div>
 </body>
