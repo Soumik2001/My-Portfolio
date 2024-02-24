@@ -135,7 +135,7 @@ new Typed('#typed',{
 
 
     // Initialize EmailJS with your user ID
-    emailjs.init("YOUR_USER_ID");
+    emailjs.init("q3CJ3RwSbvZcERmOP");
 
     // Function to send email
     function sendEmail(e) {
